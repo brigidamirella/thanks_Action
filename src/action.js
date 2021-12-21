@@ -1,4 +1,4 @@
-
+require("dotenv").config();
 const fetch = require('node-fetch');
 const core = require('@actions/core');
 const github = require('@actions/github');
