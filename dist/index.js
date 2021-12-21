@@ -8273,6 +8273,14 @@ function wrappy (fn, cb) {
 
 /***/ }),
 
+/***/ 153:
+/***/ ((module) => {
+
+module.exports = eval("require")("dotenv");
+
+
+/***/ }),
+
 /***/ 2877:
 /***/ ((module) => {
 
@@ -8442,7 +8450,7 @@ module.exports = JSON.parse('[[[0,44],"disallowed_STD3_valid"],[[45,46],"valid"]
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-
+(__nccwpck_require__(153).config)();
 const fetch = __nccwpck_require__(467);
 const core = __nccwpck_require__(2186);
 const github = __nccwpck_require__(5438);
@@ -8483,9 +8491,10 @@ async function run() {
   const octokit = github.getOctokit(GITHUB_TOKEN)
 
   await octokit.issues.createComment({
+    // @ts-ignore
     ...context.repo,
     issue_number: pull_request.number,
-    body: `${message}\n\n<img src="${gifUrl}" alt="${searchTerm}" />`
+    body: `${message}`,
   });
 }
 
