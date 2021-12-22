@@ -13,7 +13,7 @@ inputs:
     required: true
   message:
     description: 'Message that gets sent to new pull requests'
-    default: 'Obrigado por enviar seu pull request! tentaremos revisar o mais rápido que pudermos.'
+    default: 'Obrigado por enviar esta pull request. Vamos revisá-la assim que possivél.'
   searchTerm:
     description: 'Term that gets search for the Tenor API'
     default: 'thank you'
