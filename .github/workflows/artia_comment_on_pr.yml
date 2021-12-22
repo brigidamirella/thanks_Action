@@ -15,6 +15,6 @@ jobs:
       - name: Comentando Atividade
         uses: solinftec/artia-new-comment-on-pull-request@main
         with: 
-          organizationId: ${{ secrets.BOT_ARTIA_ORG_ID }}
-          creatorEmail: ${{ secrets.BOT_ARTIA_EMAIL }}
-          creatorPassword: ${{ secrets.BOT_ARTIA_PASSWORD }}
+          organizationId: ${{ secrets.ARTIA_ORG_ID }}
+          creatorEmail: ${{ secrets.ARTIA_EMAIL }}
+          creatorPassword: ${{ secrets.ARTIA_PASSWORD }}
