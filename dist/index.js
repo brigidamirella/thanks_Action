@@ -8468,7 +8468,7 @@
       await octokit.rest.issues.createComment({
         ...context.repo,
         issue_number: pull_request.number,
-        body: `Obrigado pela pull request, vamos analiza-la o mais rapido possivel.\n\n<img src="${gifUrl}" alt="thank you" />`
+        body: `Obrigado por enviar esta pull request. Vamos revisá-la assim que possivél.\n\n<img src="${gifUrl}" alt="thank you" />`
       });
     }
   
