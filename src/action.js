@@ -22,7 +22,7 @@ async function run() {
     );
   }
 
-  const randomPos = Math.round(Math.random() * 1000);
+  const randomPos = Math.round(Math.random() * 10);
   const url = "https://api.tenor.com/v1/search?q=love&pos=$123&limit=1&media_filter=minimal&contentfilter=high&key=HS0UNSXONQCL";
     
   console.log(`Searching Tenor: ${url}`);
